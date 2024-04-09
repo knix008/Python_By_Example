@@ -14,13 +14,7 @@ def debug(func):
     return wrapper
 
 
-# Applying decorator to hello()
-@debug
-def hello(name):
-    return "Hello " + name
-
-
 # Calling the decorated function
-print(hello("Bob"))
-# Prints [DEBUG] Calling hello with argument ('Bob',) | Result: Hello Bob
-# Prints Hello Bob
+print((debug(lambda x: x**2))(3))
+# Prints [DEBUG] Calling <lambda> with argument (3,) | Result: 9
+# Prints 9
