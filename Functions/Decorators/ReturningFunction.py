@@ -1,6 +1,6 @@
 def greet():
     def hello(name):
-        print("Hello", name)
+        print("Innter : Hello", name)
 
     return hello
 
