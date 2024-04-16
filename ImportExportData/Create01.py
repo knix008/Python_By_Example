@@ -1,10 +1,14 @@
-# Create a file and open it for writing
+try:
+    # Create a file and open it for writing
+    # write mode
+    f = open("newFile.txt", "w")
 
-# write mode
-f = open("newFile.txt", "w")
+    # append mode
+    f = open("newFile.txt", "a")
 
-# append mode
-f = open("newFile.txt", "a")
+    # read + write mode
+    f = open("newFile.txt", "r+")
+except:
+    print("Something Wrong!!!")
 
-# read + write mode
-f = open("newFile.txt", "r+")
+print("Done!!!")
